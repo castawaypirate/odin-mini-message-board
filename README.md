@@ -1,1 +1,1 @@
-# odin-mini-message-board
+# Odin mini Message Board

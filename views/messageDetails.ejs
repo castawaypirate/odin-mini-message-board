@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Details</title>
+</head>
+
+<body>
+  <%- include("header", {title: title , active: "/" })%>
+    <div class="content">
+      <h2>
+        <%= user%>
+      </h2>
+      <p>
+        <%= message%>
+      </p>
+      <div>
+        <%= added%>
+      </div>
+    </div>
+</body>

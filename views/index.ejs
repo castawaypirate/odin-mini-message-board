@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script src="/js/messages.js" defer></script>
+  <title>Minimi</title>
+</head>
+
+<body>
+  <%- include("header", {title: title, active: "/" })%>
+    <div class="content">
+      <ul>
+        <% for(let message of messages) { %>
+          <%- include("message", {id: message.id ,user: message.user, message: message.text, added: message.added})%>
+            <% } %>
+      </ul>
+    </div>
+</body>

@@ -1,0 +1,32 @@
+body {
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0.5rem;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+
+    a {
+      all: unset;
+    }
+
+    a:hover {
+      cursor: pointer;
+      font-weight: bolder;
+    }
+  }
+}
+
+
+.active {
+  font-weight: bolder;
+}

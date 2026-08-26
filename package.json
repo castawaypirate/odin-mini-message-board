@@ -1,0 +1,29 @@
+{
+  "name": "odin-mini-message-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castawaypirate/odin-mini-message-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/castawaypirate/odin-mini-message-board/issues"
+  },
+  "homepage": "https://github.com/castawaypirate/odin-mini-message-board#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "moment": "^2.30.1",
+    "serve-favicon": "^2.5.1"
+  }
+}
