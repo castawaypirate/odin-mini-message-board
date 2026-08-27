@@ -2,6 +2,7 @@
 
 <head>
   <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/messageDetails.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Details</title>
 </head>
@@ -9,14 +10,21 @@
 <body>
   <%- include("header", {title: title , active: "/" })%>
     <div class="content">
-      <h2>
-        <%= user%>
-      </h2>
-      <p>
-        <%= message%>
-      </p>
-      <div>
-        <%= added%>
+      <div class="details">
+        <h2>
+          <%= user%>
+        </h2>
+        <p>
+          <%= message%>
+        </p>
+        <div class="message-date">
+          <%= added%>
+        </div>
       </div>
+      <button id="back-button">
+        <a href="/">
+          Back
+        </a>
+      </button>
     </div>
 </body>

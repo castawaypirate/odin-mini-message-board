@@ -28,8 +28,6 @@ export async function submitMessage(req, res) {
   res.redirect("/");
 }
 
-
-
 export async function messageDetails(req, res) {
   const { messageId } = req.params;
 

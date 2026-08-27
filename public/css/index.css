@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  border: 1px solid #ccc !important;
+  border-radius: 16px;
+  padding: 8px 16px;
+  /* width: fit-content; */
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+.message-date {
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+button {
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}

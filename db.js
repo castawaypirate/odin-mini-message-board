@@ -17,7 +17,7 @@ export async function getMessages() {
   return messages;
 }
 
-export async function addMessage(message, user) {
+export async function addMessage(user, message) {
   const messageId = messages.length + 1;
   messages.push({ id: messageId, text: message, user: user, added: new Date() });
 }

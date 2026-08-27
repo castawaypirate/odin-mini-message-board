@@ -2,6 +2,7 @@
 
 <head>
   <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/form.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>New</title>
 </head>
@@ -12,11 +13,11 @@
       <form method="POST" action="/new">
         <div class="form-control">
           <label for="message">Message</label>
-          <input type="text" name="message" id="message" value="">
+          <input required type="text" name="message" id="message" value="">
         </div>
         <div class="form-control">
           <label for="yapper">Yapper</label>
-          <input type="text" name="yapper" id="yapper" value="">
+          <input required type="text" name="yapper" id="yapper" value="">
         </div>
         <button type="submit">Submit</button>
       </form>
