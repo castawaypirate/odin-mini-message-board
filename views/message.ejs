@@ -1,7 +1,7 @@
 <li>
   <div data-id="<%= id%>" class="message-container">
     <h3>
-      <%= user%>
+      <%= username%>
     </h3>
     <p>
       <%= message%>
@@ -9,6 +9,9 @@
     <div class="message-date">
       <%= added%>
     </div>
-    <button>Details</button>
+    <div class="message-contol">
+      <button class="details-button">Details</button>
+      <button class="delete-button">Delete</button>
+    </div>
   </div>
 </li>

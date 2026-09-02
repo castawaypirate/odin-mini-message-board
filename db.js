@@ -1,27 +1,19 @@
-const messages = [
-  {
-    id: 1,
-    text: "Hello there!",
-    user: "Obi-Wan Kenobi",
-    added: new Date()
-  },
-  {
-    id: 2,
-    text: "General Kenobi...",
-    user: "General Grievous",
-    added: new Date()
-  }
-]
+import pool from "./db_pool.js"
 
 export async function getMessages() {
-  return messages;
+  const { rows } = await pool.query("SELECT * FROM messages");
+  return rows;
 }
 
-export async function addMessage(user, message) {
-  const messageId = messages.length + 1;
-  messages.push({ id: messageId, text: message, user: user, added: new Date() });
+export async function addMessage(message, username) {
+  await pool.query("INSERT INTO messages (text, username) VALUES ($1, $2)", [message, username]);
+}
+
+export async function deleteMessage(messageId) {
+  return await pool.query("DELETE FROM messages WHERE id = $1", [messageId]);
 }
 
 export async function getMessageById(messageId) {
-  return messages.find(message => message.id === parseInt(messageId));
+  const { rows } = await pool.query("SELECT * FROM messages WHERE id = $1", [messageId])
+  return rows[0];
 }

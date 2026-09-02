@@ -4,8 +4,12 @@ export async function getMessages() {
   return await db.getMessages();
 }
 
-export async function addMessage(user, message) {
-  await db.addMessage(user, message);
+export async function addMessage(message, username) {
+  await db.addMessage(message, username);
+}
+
+export async function deleteMessage(messageId) {
+  return await db.deleteMessage(messageId);
 }
 
 export async function getMessageById(messageId) {

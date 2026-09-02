@@ -10,16 +10,17 @@
 <body>
   <%- include("header", {title: title, active: "/new" })%>
     <div class="content">
-      <form method="POST" action="/new">
-        <div class="form-control">
-          <label for="message">Message</label>
-          <input required type="text" name="message" id="message" value="">
-        </div>
-        <div class="form-control">
-          <label for="yapper">Yapper</label>
-          <input required type="text" name="yapper" id="yapper" value="">
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      <%- include("partial/errors")%>
+        <form method="POST" action="/new">
+          <div class="form-control">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" value="" required>
+          </div>
+          <div class="form-control">
+            <label for="yapper">Yapper</label>
+            <input type="text" name="yapper" id="yapper" value="" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
     </div>
 </body>

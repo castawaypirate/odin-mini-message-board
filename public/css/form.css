@@ -4,6 +4,13 @@
   margin: 0.5rem 0.5rem;
 }
 
+.errors {
+  padding-inline-start: 1.2rem;
+  list-style-type: disc !important;
+  margin-bottom: 0.5rem;
+}
+
+
 form {
   border: 1px solid #ccc !important;
   border-radius: 16px;

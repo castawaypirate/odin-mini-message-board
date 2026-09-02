@@ -13,7 +13,8 @@
     <div class="content">
       <ul>
         <% for(let message of messages) { %>
-          <%- include("message", {id: message.id ,user: message.user, message: message.text, added: message.added})%>
+          <%- include("message", {id: message.id ,username: message.username, message: message.text, added:
+            message.added})%>
             <% } %>
       </ul>
     </div>
